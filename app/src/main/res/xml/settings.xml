@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <PreferenceCategory android:title="Général">
+        <CheckBoxPreference
+            android:key="Check_Box"
+            android:title="CheckBox preferences"
+            android:summaryOff="CheckBox decoché"
+            android:summaryOn="CheckBox Coché"
+            android:defaultValue="true"
+            />
+
+        <EditTextPreference
+            android:key="Text"
+            android:title ="Text android dialog"
+            android:summary="Clique pour inserer du texte"
+            android:dialogTitle="Inserer le texte"
+            android:negativeButtonText="Je ne valide plus"
+            android:positiveButtonText="Je valide"
+            android:dependency="Check_Box"
+            />
+
+        <ListPreference
+            android:key="List"
+            android:title ="Voici la liste de preferences"
+            android:summary="Cliquez pour ouvrir une liste a choisir"
+            android:entryValues="@array/list_loisirs"
+            android:entries="@array/list_loisirs"
+            android:dialogTitle="Merci de choisir vos pref !"
+            />
+
+    </PreferenceCategory>
+
+
+
+
+</PreferenceScreen>

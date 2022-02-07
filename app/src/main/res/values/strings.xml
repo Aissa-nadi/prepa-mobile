@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TpGlobale</string>
+
+    <string-array name="list_loisirs">
+        <item> Chocolat </item>
+        <item> Vanille </item>
+        <item> Fraise </item>
+
+
+    </string-array>
+</resources>
